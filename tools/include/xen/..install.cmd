@@ -1,0 +1,1 @@
+cmd_/tools/include/xen/.install := /bin/sh scripts/headers_install.sh /tools/include/xen   /UHL/sources/linux-3.10.14/include/uapi/xen/evtchn.h   /UHL/sources/linux-3.10.14/include/uapi/xen/privcmd.h ; for F in ; do echo "\#include <asm-generic/$$F>" > /tools/include/xen/$$F; done; touch /tools/include/xen/.install

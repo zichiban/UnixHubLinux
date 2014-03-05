@@ -1,0 +1,1 @@
+cmd_/tools/include/linux/hdlc/.install := /bin/sh scripts/headers_install.sh /tools/include/linux/hdlc   /UHL/sources/linux-3.10.14/include/uapi/linux/hdlc/ioctl.h ; for F in ; do echo "\#include <asm-generic/$$F>" > /tools/include/linux/hdlc/$$F; done; touch /tools/include/linux/hdlc/.install

@@ -1,0 +1,1 @@
+cmd_/tools/include/linux/isdn/.install := /bin/sh scripts/headers_install.sh /tools/include/linux/isdn   /UHL/sources/linux-3.10.14/include/uapi/linux/isdn/capicmd.h ; for F in ; do echo "\#include <asm-generic/$$F>" > /tools/include/linux/isdn/$$F; done; touch /tools/include/linux/isdn/.install

@@ -1,0 +1,1 @@
+cmd_/tools/include/video/.install := /bin/sh scripts/headers_install.sh /tools/include/video   /UHL/sources/linux-3.10.14/include/uapi/video/edid.h   /UHL/sources/linux-3.10.14/include/uapi/video/sisfb.h   /UHL/sources/linux-3.10.14/include/uapi/video/uvesafb.h ; for F in ; do echo "\#include <asm-generic/$$F>" > /tools/include/video/$$F; done; touch /tools/include/video/.install

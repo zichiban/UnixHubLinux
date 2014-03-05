@@ -1,0 +1,1 @@
+cmd_/tools/include/linux/sunrpc/.install := /bin/sh scripts/headers_install.sh /tools/include/linux/sunrpc   /UHL/sources/linux-3.10.14/include/uapi/linux/sunrpc/debug.h ; for F in ; do echo "\#include <asm-generic/$$F>" > /tools/include/linux/sunrpc/$$F; done; touch /tools/include/linux/sunrpc/.install

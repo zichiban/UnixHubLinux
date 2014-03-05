@@ -1,0 +1,1 @@
+cmd_/tools/include/linux/caif/.install := /bin/sh scripts/headers_install.sh /tools/include/linux/caif   /UHL/sources/linux-3.10.14/include/uapi/linux/caif/caif_socket.h   /UHL/sources/linux-3.10.14/include/uapi/linux/caif/if_caif.h ; for F in ; do echo "\#include <asm-generic/$$F>" > /tools/include/linux/caif/$$F; done; touch /tools/include/linux/caif/.install

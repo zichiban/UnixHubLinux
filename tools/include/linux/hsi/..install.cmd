@@ -1,0 +1,1 @@
+cmd_/tools/include/linux/hsi/.install := /bin/sh scripts/headers_install.sh /tools/include/linux/hsi   /UHL/sources/linux-3.10.14/include/uapi/linux/hsi/hsi_char.h ; for F in ; do echo "\#include <asm-generic/$$F>" > /tools/include/linux/hsi/$$F; done; touch /tools/include/linux/hsi/.install
